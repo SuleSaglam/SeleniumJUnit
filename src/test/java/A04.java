@@ -32,7 +32,7 @@ public class A04 extends TestBase {
 
         for (String eachWHD: tumSayfalarWHD) {
             if (!eachWHD.equals(kiwiWHD)) {
-                eachWHD = amazonWHD;
+                amazonWHD=eachWHD;
             }
         }
 
@@ -50,7 +50,7 @@ public class A04 extends TestBase {
 
         for (String eachWHD: tumSayfalarWHD) {
             if (!eachWHD.contains(amazonWHD) && eachWHD.contains(amazonWHD)) {
-                eachWHD = walmartWHD;
+                walmartWHD=eachWHD;
             }
         }
 
