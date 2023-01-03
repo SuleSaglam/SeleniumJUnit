@@ -47,9 +47,8 @@ public class A02 {
         driver.switchTo().alert().accept();
 
         // 6- “Click and hold" kutusuna basili tutun
-        WebElement clickAndHold = driver.findElement(By.id("click-box"));
-
-        actions.doubleClick(clickAndHold).perform();
+        WebElement clickAndHoldElementi = driver.findElement(By.id("click-box"));
+        actions.clickAndHold(clickAndHoldElementi).perform();
 
         // 7-“Click and hold" kutusunda cikan yaziyi yazdirin
         String clickAndHoldYazisi = driver.findElement(By.id("click-box")).getText();
