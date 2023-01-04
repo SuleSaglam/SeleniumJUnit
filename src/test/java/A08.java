@@ -54,8 +54,6 @@ public class A08 {
 
     @Test
     public void test02() {
-
-
         // dropdown menuden elektronik bölümü seçin
         WebElement dropdownWebElementi = driver.findElement(By.xpath("//select[@id='searchDropdownBox']"));
         Select select = new Select(dropdownWebElementi);
